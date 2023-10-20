@@ -1,0 +1,56 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="images\238-2381636_happy-face-color-in-smiley-face-hd-png.png" />
+    <None Remove="images\dots-three-outline-vertical.png" />
+    <None Remove="images\icon-search-bar-vector-magnifier-icon-design-element-web-site-interface-app-software-vector-magnifier-icon-154035056.png" />
+    <None Remove="images\istockphoto-1158561473-612x612.jpg" />
+    <None Remove="images\menu.png" />
+    <None Remove="images\pngtree-microphone-icon-png-image_1545444.jpg" />
+    <None Remove="images\Screenshot 2023-10-20 191248.png" />
+    <None Remove="images\smile.png" />
+    <None Remove="images\whatsapp-mavi-tik.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="images\238-2381636_happy-face-color-in-smiley-face-hd-png.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\dots-three-outline-vertical.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\icon-search-bar-vector-magnifier-icon-design-element-web-site-interface-app-software-vector-magnifier-icon-154035056.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\istockphoto-1158561473-612x612.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\menu.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\pngtree-microphone-icon-png-image_1545444.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\Screenshot 2023-10-20 191248.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\smile.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\whatsapp-mavi-tik.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MaterialDesignThemes" Version="4.9.0" />
+  </ItemGroup>
+
+</Project>

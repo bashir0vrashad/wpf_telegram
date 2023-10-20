@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "agGXhfN/yWfDsi/6BFYmYJo4qP8bDvL++aEENKTCLUCYxxP7ofspgZvEoKr+zY8wnm8tP+g+uOKN9K3SJLr9GA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\NITRO\\source\\repos\\WpfApp1_telegram\\WpfApp1_telegram\\WpfApp1_telegram.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\NITRO\\.nuget\\packages\\materialdesigncolors\\2.1.4\\materialdesigncolors.2.1.4.nupkg.sha512",
+    "C:\\Users\\NITRO\\.nuget\\packages\\materialdesignthemes\\4.9.0\\materialdesignthemes.4.9.0.nupkg.sha512",
+    "C:\\Users\\NITRO\\.nuget\\packages\\microsoft.xaml.behaviors.wpf\\1.1.39\\microsoft.xaml.behaviors.wpf.1.1.39.nupkg.sha512"
+  ],
+  "logs": []
+}

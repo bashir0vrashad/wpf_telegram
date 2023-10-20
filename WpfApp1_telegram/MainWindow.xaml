@@ -1,0 +1,303 @@
+﻿<Window x:Class="WpfApp1_telegram.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:materialDesign="clr-namespace:MaterialDesignThemes.Wpf;assembly=MaterialDesignThemes.Wpf"
+        xmlns:local="clr-namespace:WpfApp1_telegram"
+        mc:Ignorable="d"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        TextElement.FontWeight="Regular"
+        TextElement.FontSize="13"
+        TextOptions.TextFormattingMode="Ideal"
+        TextOptions.TextRenderingMode="Auto"
+        Background="{DynamicResource MaterialDesignPaper}"
+        FontFamily="{DynamicResource MaterialDesignFont}"
+        Title="MainWindow" Height="500" Width="800" MinHeight="500" MaxHeight="500" MinWidth="800" MaxWidth="800">
+   
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.4*"></ColumnDefinition>
+                <ColumnDefinition Width="0.6*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <DockPanel Grid.Column="0" >
+            <StackPanel Height="120" VerticalAlignment="Top"  DockPanel.Dock="Top"  >
+                <StackPanel Height="50" Orientation="Horizontal" >
+
+                    <Button Width="50" Height="40" Margin="0,0,10,10" HorizontalAlignment="Left" Background="White" BorderBrush="White">
+                        <Image Source="images\menu.png" Height="30" Width="30"  ></Image>
+                    </Button>
+
+                    <TextBox Height="40" Width="170" Margin="0,0,10,10" Text="Search" TextAlignment="Left"  VerticalAlignment="Center"  HorizontalAlignment="Left" FontSize="17" Background="WhiteSmoke" Foreground="Gray"></TextBox>
+                </StackPanel>
+                <StackPanel Height="60" Orientation="Horizontal" Background="Blue"   >
+                    <Grid
+Width="70">
+                        <Button Background="Red" BorderBrush="Red" Margin="10,5,10,5"
+  Height="50"
+  materialDesign:ButtonAssist.CornerRadius="25"
+  IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}"
+  Style="{StaticResource MaterialDesignRaisedDarkButton}"
+  ToolTip="MaterialDesignRaisedDarkButton with Round Corners">
+                            <TextBlock
+    Text="ES" />
+                        </Button>
+                    </Grid>
+                    <StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <Label HorizontalAlignment="Left" Width="160" Content="Eva Summer" FontWeight="ExtraBold" FontSize="16" Foreground="White" ></Label>
+                            <Label HorizontalAlignment="Right" Width="40" Content="11:00" Foreground="White" VerticalAlignment="Center"  ></Label>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <Label HorizontalAlignment="Left" Width="180" Content="Reminds me of a Chinese prover..."  Foreground="White"></Label>
+                            <Button Width="15" Height="15" Foreground="White" Background="Blue" BorderBrush="Blue"
+IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}"
+Style="{StaticResource MaterialDesignFloatingActionMiniLightButton}"
+ToolTip="MaterialDesignFloatingActionMiniLightButton">
+                                <materialDesign:PackIcon
+  Width="15"
+  Height="15"
+  Kind="Pin" />
+                            </Button>
+                        </StackPanel>
+
+                    </StackPanel>
+
+                </StackPanel>
+
+            </StackPanel>
+               
+
+            <ScrollViewer>
+                <StackPanel>
+                
+                        
+                
+                    <StackPanel Height="60" Orientation="Horizontal" >
+                            <Grid
+Width="70">
+                                <Button Background="Orange" BorderBrush="Orange" Margin="10,0,10,10"
+  Height="50"
+  materialDesign:ButtonAssist.CornerRadius="25"
+  IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}"
+  Style="{StaticResource MaterialDesignRaisedDarkButton}"
+  ToolTip="MaterialDesignRaisedDarkButton with Round Corners">
+                                    <TextBlock
+    Text="AS" />
+                                </Button>
+                            </Grid>
+                            <StackPanel>
+                                <StackPanel Orientation="Horizontal">
+                                    <Label HorizontalAlignment="Left" Width="160" Content="Alexandra Smith" FontWeight="ExtraBold" FontSize="16" ></Label>
+                                    <Label HorizontalAlignment="Right" Width="40" Content="10:00" Foreground="Gray" VerticalAlignment="Center"  ></Label>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal">
+                                    <Label HorizontalAlignment="Left" Width="180" Content="This is amazing!"  Foreground="Gray"></Label>
+                                    <Button Width="15" Height="15" Foreground="White" Background="Blue" BorderBrush="Blue"
+IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}"
+Style="{StaticResource MaterialDesignFloatingActionMiniLightButton}"
+ToolTip="MaterialDesignFloatingActionMiniLightButton">
+                                        <materialDesign:PackIcon
+  Width="15"
+  Height="15"
+  Kind="Number2" />
+                                    </Button>
+                                </StackPanel>
+
+                            </StackPanel>
+                        </StackPanel>
+                        <StackPanel Height="60" Orientation="Horizontal" >
+                            <Grid
+Width="70">
+                                <Button Background="Yellow" BorderBrush="Yellow" Margin="10,0,10,10"
+  Height="50"
+  materialDesign:ButtonAssist.CornerRadius="25"
+  IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}"
+  Style="{StaticResource MaterialDesignRaisedDarkButton}"
+  ToolTip="MaterialDesignRaisedDarkButton with Round Corners">
+                                    <TextBlock
+    Text="MA" />
+                                </Button>
+                            </Grid>
+                            <StackPanel>
+                                <StackPanel Orientation="Horizontal">
+                                    <Label HorizontalAlignment="Left" Width="160" Content="Mike Apple" FontWeight="ExtraBold" FontSize="16" ></Label>
+                                    <Label Width="40" Content="9:00" Foreground="Gray"  />
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal">
+                                <Image Source="images\smile.png" Width="15" Height="15"></Image>
+                                    <Label HorizontalAlignment="Left" Width="165" Content="Sticker"  Foreground="Blue"></Label>
+                                    <Button Width="15" Height="15" Foreground="White" Background="Gray" BorderBrush="Gray"
+IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}"
+Style="{StaticResource MaterialDesignFloatingActionMiniLightButton}"
+ToolTip="MaterialDesignFloatingActionMiniLightButton">
+                                        <materialDesign:PackIcon
+  Width="15"
+  Height="15"
+  Kind="Number2" />
+                                    </Button>
+                                </StackPanel>
+
+                            </StackPanel>
+                        </StackPanel>
+                        <StackPanel Height="60" Orientation="Horizontal" >
+                            <Grid
+Width="70">
+                                <Button Background="Green" BorderBrush="Green" Margin="10,0,10,10"
+  Height="50"
+  materialDesign:ButtonAssist.CornerRadius="25"
+  IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}"
+  Style="{StaticResource MaterialDesignRaisedDarkButton}"
+  ToolTip="MaterialDesignRaisedDarkButton with Round Corners">
+                                    <TextBlock
+    Text="EC" />
+                                </Button>
+                            </Grid>
+                            <StackPanel>
+                                <StackPanel Orientation="Horizontal">
+                                    <Image Source="images\istockphoto-1158561473-612x612.jpg" Width="15" Height="15"></Image>
+                                    <Label HorizontalAlignment="Left" Width="150" Content="Evening Club" FontWeight="ExtraBold" FontSize="16" ></Label>
+                                    <Label HorizontalAlignment="Right" Width="40" Content="8:00" Foreground="Gray" VerticalAlignment="Center"  ></Label>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal">
+                                    <Label HorizontalAlignment="Left" Width="40" Content="Eva:"  Foreground="Blue" VerticalAlignment="Center"></Label>
+                                    <Label HorizontalAlignment="Left" Width="150" Content="Photo"  Foreground="Blue"></Label>
+                                    <Label HorizontalAlignment="Center" Width="20" Content=""  Foreground="Gray" VerticalAlignment="Center"></Label>
+                                </StackPanel>
+
+                            </StackPanel>
+                        </StackPanel>
+                        <StackPanel Height="60" Orientation="Horizontal" >
+                            <Grid
+Width="70">
+                                <Button Background="Aqua" BorderBrush="Aqua" Margin="10,0,10,10"
+  Height="50"
+  materialDesign:ButtonAssist.CornerRadius="25"
+  IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}"
+  Style="{StaticResource MaterialDesignRaisedDarkButton}"
+  ToolTip="MaterialDesignRaisedDarkButton with Round Corners">
+                                    <TextBlock
+    Text="OP" />
+                                </Button>
+                            </Grid>
+                            <StackPanel>
+                                <StackPanel Orientation="Horizontal">
+                                    <Image Source="images\istockphoto-1158561473-612x612.jpg" Width="15" Height="15"></Image>
+                                    <Label HorizontalAlignment="Left" Width="150" Content="Old Pirates" FontWeight="ExtraBold" FontSize="16" ></Label>
+                                    <Label HorizontalAlignment="Right" Width="40" Content="7:00" Foreground="Gray" VerticalAlignment="Center"  ></Label>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal">
+                                    <Label HorizontalAlignment="Left" Width="40" Content="Max:"  Foreground="Blue" VerticalAlignment="Center"></Label>
+                                    <Label HorizontalAlignment="Left" Width="150" Content="Yo-Ho-Ho!"  Foreground="Gray"></Label>
+                                    <Label HorizontalAlignment="Center" Width="20" Content=""  Foreground="Gray" VerticalAlignment="Center"></Label>
+                                </StackPanel>
+
+                            </StackPanel>
+                        </StackPanel>
+                        <StackPanel Height="60" Orientation="Horizontal" >
+                            <Grid
+Width="70">
+                                <Button Background="Blue " BorderBrush="Blue" Margin="10,0,10,10" FontSize="10"
+  Height="50"
+  materialDesign:ButtonAssist.CornerRadius="25"
+  IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}"
+  Style="{StaticResource MaterialDesignRaisedDarkButton}"
+  ToolTip="MaterialDesignRaisedDarkButton with Round Corners">
+                                    <TextBlock
+    Text="MM" />
+                                </Button>
+                            </Grid>
+                            <StackPanel>
+                                <StackPanel Orientation="Horizontal">
+                                    <Label HorizontalAlignment="Left" Width="150" Content="Max Bright" FontWeight="ExtraBold" FontSize="16" ></Label>
+                                    <Image Source="images\whatsapp-mavi-tik.png" Width="15" Height="15"></Image>
+                                    <Label HorizontalAlignment="Right" Width="40" Content="6:00" Foreground="Gray" VerticalAlignment="Center"  ></Label>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal">
+                                    <Label HorizontalAlignment="Left" Width="170" Content="How about some coffee?"  Foreground="Gray"></Label>
+                                    <Label HorizontalAlignment="Center" Width="20" Content=""  Foreground="Gray" VerticalAlignment="Center"></Label>
+                                </StackPanel>
+
+                            </StackPanel>
+                        </StackPanel>
+                        <StackPanel Height="60" Orientation="Horizontal" >
+                            <Grid
+Width="70">
+                                <Button Background="Purple" BorderBrush="Purple" Margin="10,0,10,10"
+  Height="50"
+  materialDesign:ButtonAssist.CornerRadius="25"
+  IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}"
+  Style="{StaticResource MaterialDesignRaisedDarkButton}"
+  ToolTip="MaterialDesignRaisedDarkButton with Round Corners">
+                                    <TextBlock
+    Text="NP" />
+                                </Button>
+                            </Grid>
+                            <StackPanel>
+                                <StackPanel Orientation="Horizontal">
+                                    <Label HorizontalAlignment="Left" Width="150" Content="Natalie Parker" FontWeight="ExtraBold" FontSize="16" ></Label>
+                                    <Image Source="images\whatsapp-mavi-tik.png" Width="15" Height="15"></Image>
+                                    <Label HorizontalAlignment="Right" Width="40" Content="5:00" Foreground="Gray" VerticalAlignment="Center"  ></Label>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal">
+                                    <Label HorizontalAlignment="Left" Width="170" Content="OK,great)"  Foreground="Gray"></Label>
+                                    <Label HorizontalAlignment="Center" Width="20" Content=""  Foreground="Gray" VerticalAlignment="Center"></Label>
+                                </StackPanel>
+
+                            </StackPanel>
+                        </StackPanel>
+                        <StackPanel Height="60" Orientation="Horizontal" >
+                            <Grid
+Width="70">
+                                <Button Background="Pink" BorderBrush="Pink" Margin="10,0,10,10"
+  Height="50"
+  materialDesign:ButtonAssist.CornerRadius="25"
+  IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}"
+  Style="{StaticResource MaterialDesignRaisedDarkButton}"
+  ToolTip="MaterialDesignRaisedDarkButton with Round Corners">
+                                    <TextBlock
+    Text="DJ" />
+                                </Button>
+                            </Grid>
+                            <StackPanel>
+                                <StackPanel Orientation="Horizontal">
+                                    <Label HorizontalAlignment="Left" Width="160" Content="Davy Jones" FontWeight="ExtraBold" FontSize="16" ></Label>
+                                    <Label HorizontalAlignment="Right" Width="40" Content="4:00" Foreground="Gray" VerticalAlignment="Center"  ></Label>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal">
+                                    <Label HorizontalAlignment="Left" Width="170" Content="Keynote.pdf"  Foreground="Blue"></Label>
+                                    <Label HorizontalAlignment="Center" Width="20" Content=""  Foreground="Gray" VerticalAlignment="Center"></Label>
+                                </StackPanel>
+
+                            </StackPanel>
+                        </StackPanel>
+                    </StackPanel>
+
+                </ScrollViewer>
+            </DockPanel>
+
+            <DockPanel Grid.Column="1">
+                <StackPanel Orientation="Horizontal" Height="50" VerticalAlignment="Top"  DockPanel.Dock="Top">
+                    <StackPanel>
+                        <Label Content="Eve Summer" FontWeight="ExtraBlack" FontSize="20" Width="388" ></Label>
+                        <Label Content="Online"  FontSize="12" Width="387" Foreground="Blue" ></Label>
+                    </StackPanel>
+                    <Image Source="images\icon-search-bar-vector-magnifier-icon-design-element-web-site-interface-app-software-vector-magnifier-icon-154035056.png" Width="40" Height="40"></Image>
+                    <Image Source="images\dots-three-outline-vertical.png" Width="40" Height="40" HorizontalAlignment="Right" ></Image>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Height="50" VerticalAlignment="Bottom"  DockPanel.Dock="Bottom">
+                    <Image Source="images\Screenshot 2023-10-20 191248.png" Width="40" Height="40"></Image>
+                    <TextBox Width="359" Text="Write a message..." TextAlignment="Left" VerticalAlignment="Center" Foreground="Gray"></TextBox>
+                    <Image Source="images\238-2381636_happy-face-color-in-smiley-face-hd-png.png" Width="40" Height="40"></Image>
+                    <Image Source="images\pngtree-microphone-icon-png-image_1545444.jpg" Width="40" Height="40" HorizontalAlignment="Right" ></Image>
+                </StackPanel>
+            </DockPanel>
+
+
+
+
+
+        </Grid>
+   
+    
+</Window>
